@@ -9,7 +9,7 @@ a{color:#1565c0} code{background:#eef;padding:0 .25em;border-radius:3px} nav a{m
 <h1>Taxxolio</h1>
 <nav><a href="#en">English</a><a href="#de">Deutsch</a></nav>
 <section id="en"><h2>Privacy Policy</h2>
-<p><strong>Last updated:</strong> 8 November 2026</p>
+<p><strong>Last updated:</strong> 22 November 2026</p>
 <p><strong>Taxxolio</strong> is an Android app for collecting, sorting and exporting tax receipts and documents. It is offered free of charge by Mehran Sarabchian, c/o Akram Hamidbagi, Jüdenstraße 17, 13597 Berlin, Germany (&quot;we&quot;).</p>
 <h3>The short version</h3>
 <p>Taxxolio works completely offline. <strong>We do not collect, receive or store any of your data.</strong> Your documents never leave your phone unless you decide to share them yourself.</p>
@@ -29,6 +29,10 @@ a{color:#1565c0} code{background:#eef;padding:0 .25em;border-radius:3px} nav a{m
 <h3>Permissions</h3>
 <ul>
 <li><strong>Camera:</strong> only to photograph documents. Photos are saved on your phone only. You can use the app without it by importing files.</li>
+<li><strong>Biometrics / screen lock (optional, from version 1.1):</strong> only if you switch on "Lock Taxxolio" in Settings. Android itself checks your fingerprint, face or screen lock and only tells the app "yes" or "no". Taxxolio never sees, receives or stores your fingerprint, face or PIN. This is why the app lists the Android permission to use biometric hardware.</li>
+<li><strong>Notifications (optional, from version 1.1):</strong> only if you switch on a deadline reminder in Settings. Reminders are created on your phone and nothing is sent anywhere. Android 13 and newer ask for your permission first.</li>
+<li><strong>Run after restart and keep the phone awake briefly:</strong> Android's WorkManager uses these two permissions to run the small daily reminder check and to start it again after you restart your phone. It only looks at the date on your phone.</li>
+<li><strong>Backup (optional, from version 1.2):</strong> only when you tap "Create backup" in Settings. Taxxolio then writes one ZIP file with your documents to the place you choose in Android's file screen. Taxxolio itself sends it nowhere; if you choose a folder that belongs to a cloud service, that service stores the file under its own terms. The file is not encrypted. "Restore from backup" reads a file you choose and only adds what is missing. No extra permission is needed.</li>
 </ul>
 <h3>Document scanner (Google)</h3>
 <p>To scan paper documents, Taxxolio uses Google&#x27;s <strong>ML Kit Document Scanner</strong>, which is part of Google Play services on your phone. The scanning (edge detection, straightening, cleaning) runs on your phone. When you use the scanner for the first time, Google Play services may download the scanner component. This is done by Google Play services, not by Taxxolio, and Google&#x27;s own privacy policy applies to it: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
@@ -49,7 +53,7 @@ a{color:#1565c0} code{background:#eef;padding:0 .25em;border-radius:3px} nav a{m
 <p>E-mail: <a href="mailto:sarabchian.mehran@gmail.com">sarabchian.mehran@gmail.com</a></p>
 </section>
 <section id="de"><h2>Datenschutzerklärung</h2>
-<p><strong>Stand:</strong> 8. November 2026</p>
+<p><strong>Stand:</strong> 22. November 2026</p>
 <p><strong>Taxxolio</strong> ist eine Android-App zum Sammeln, Sortieren und Exportieren von Steuerbelegen und -unterlagen. Sie wird kostenlos angeboten von Mehran Sarabchian, c/o Akram Hamidbagi, Jüdenstraße 17, 13597 Berlin, Deutschland („wir“).</p>
 <h3>Kurz gesagt</h3>
 <p>Taxxolio funktioniert komplett offline. <strong>Wir erheben, empfangen oder speichern keine deiner Daten.</strong> Deine Dokumente verlassen dein Handy nur, wenn du sie selbst weitergibst.</p>
@@ -69,6 +73,10 @@ a{color:#1565c0} code{background:#eef;padding:0 .25em;border-radius:3px} nav a{m
 <h3>Berechtigungen</h3>
 <ul>
 <li><strong>Kamera:</strong> nur zum Fotografieren von Dokumenten. Fotos werden ausschließlich auf deinem Handy gespeichert. Du kannst die App auch ohne Kamera nutzen, indem du Dateien importierst.</li>
+<li><strong>Biometrie / Bildschirmsperre (optional, ab Version 1.1):</strong> nur wenn du in den Einstellungen „Taxxolio sperren“ einschaltest. Android selbst prüft Fingerabdruck, Gesicht oder Bildschirmsperre und meldet der App nur „ja“ oder „nein“. Taxxolio sieht, empfängt oder speichert weder deinen Fingerabdruck noch dein Gesicht noch deine PIN. Deshalb führt die App die Android-Berechtigung zur Nutzung der Biometrie-Hardware auf.</li>
+<li><strong>Benachrichtigungen (optional, ab Version 1.1):</strong> nur wenn du in den Einstellungen eine Fristen-Erinnerung einschaltest. Die Erinnerungen entstehen auf deinem Handy, nichts wird irgendwohin gesendet. Ab Android 13 fragt Android vorher nach deiner Erlaubnis.</li>
+<li><strong>Nach Neustart ausführen und das Handy kurz wach halten:</strong> Android WorkManager nutzt diese beiden Berechtigungen, um die kleine tägliche Erinnerungsprüfung auszuführen und nach einem Neustart deines Handys wieder zu starten. Sie schaut nur auf das Datum deines Handys.</li>
+<li><strong>Sicherung (optional, ab Version 1.2):</strong> nur wenn du in den Einstellungen „Sicherung erstellen“ antippst. Taxxolio schreibt dann eine ZIP-Datei mit deinen Dokumenten an den Ort, den du im Dateifenster von Android wählst. Taxxolio selbst sendet sie nirgendwohin; wählst du einen Ordner, der zu einem Cloud-Dienst gehört, speichert dieser Dienst die Datei nach seinen eigenen Bedingungen. Die Datei ist nicht verschlüsselt. „Sicherung wiederherstellen“ liest eine Datei, die du auswählst, und fügt nur hinzu, was fehlt. Es ist keine zusätzliche Berechtigung nötig.</li>
 </ul>
 <h3>Dokumenten-Scanner (Google)</h3>
 <p>Zum Scannen von Papierdokumenten nutzt Taxxolio den <strong>ML Kit Document Scanner</strong> von Google, der Teil der Google Play-Dienste auf deinem Handy ist. Das Scannen (Kantenerkennung, Begradigen, Bereinigen) läuft auf deinem Handy. Bei der ersten Nutzung kann Google Play services die Scanner-Komponente herunterladen. Das übernehmen die Google Play-Dienste, nicht Taxxolio; dafür gilt die Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
